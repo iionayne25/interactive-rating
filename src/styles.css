@@ -1,0 +1,45 @@
+/* You can add global styles to this file, and also import other style files */
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+
+h1,p{
+    font-family: 'Overpass', sans-serif;
+
+}
+
+@layer base {
+  .main {
+    @apply flex justify-center items-center bg-veryDarkBlue min-h-screen
+    ;
+  }
+  .card {
+    @apply w-[330px] bg-darkBlue h-[380px] rounded-2xl py-8 flex justify-center items-center font-sans;
+  }
+  .img {
+    @apply bg-mediumGrey/10 rounded-full p-3;
+  }
+  .textContainer {
+    @apply flex flex-col gap-3 px-3;
+  }
+  .rateContainer {
+    @apply flex gap-4 py-3 px-3  w-full justify-center items-center text-center;
+  }
+  .btnrateItem {
+    @apply w-8 h-8 rounded-full bg-mediumGrey/20 text-lightGrey flex justify-center items-center text-[14px] font-bold
+        hover:bg-lightGrey hover:text-white;
+  }
+  .rateResult {
+    @apply bg-mediumGrey/20 rounded-full px-2 py-1 text-orange text-xs;
+  }
+  .thankyouText {
+    @apply flex flex-col gap-4 justify-center items-center font-sans;
+  }
+  .thankyouText h1 {
+    @apply text-white font-bold text-xl;
+  }
+  .thankyouText p {
+    @apply text-lightGrey text-[14px] text-center px-4;
+  }
+}
