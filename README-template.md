@@ -20,7 +20,7 @@
 ### Links
 
 - Solution URL: [Github](https://github.com/iionayne25/interactive-rating)
-- Live Site URL: [Vercel](https://interactive-rating-by-pavinee.vercel.app/)
+- Live Site URL: ()
 
 ## My process
 
