@@ -4,34 +4,37 @@
 @import "tailwindcss/utilities";
 
 
-h1,p{
+h1,p,span{
     font-family: 'Overpass', sans-serif;
 
 }
 
 @layer base {
   .main {
-    @apply flex justify-center items-center bg-veryDarkBlue min-h-screen
-    ;
+    @apply flex justify-center items-center w-screen bg-veryDarkBlue min-h-screen ;
   }
   .card {
-    @apply w-[330px] bg-darkBlue h-[380px] rounded-2xl py-8 flex justify-center items-center font-sans;
+    @apply w-[330px] bg-darkBlue h-[360px] rounded-2xl  flex justify-center items-center
+    xl:h-1/2 xl:py-6 xl:w-[360px]  ;
   }
   .img {
     @apply bg-mediumGrey/10 rounded-full p-3;
   }
   .textContainer {
-    @apply flex flex-col gap-3 px-3;
+    @apply flex flex-col gap-3 px-5  ;
   }
   .rateContainer {
-    @apply flex gap-4 py-3 px-3  w-full justify-center items-center text-center;
+    @apply flex gap-4 pt-2 w-full justify-center items-center text-center xl:py-2 xl:gap-5 ;
   }
   .btnrateItem {
     @apply w-8 h-8 rounded-full bg-mediumGrey/20 text-lightGrey flex justify-center items-center text-[14px] font-bold
-        hover:bg-lightGrey hover:text-white;
+        hover:bg-lightGrey hover:text-white ;
   }
   .rateResult {
-    @apply bg-mediumGrey/20 rounded-full px-2 py-1 text-orange text-xs;
+    @apply bg-mediumGrey/20 rounded-full px-2 h-6 text-orange text-[12px] flex items-center;
+  }
+  .btnSubmit{
+    @apply w-full bg-orange rounded-full text-white h-8 font-bold text-[13px] tracking-[3px] xl:h-7 xl:hover:bg-white xl:hover:text-orange
   }
   .thankyouText {
     @apply flex flex-col gap-4 justify-center items-center font-sans;

@@ -2,8 +2,8 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-rate-component',
-  templateUrl: './rate-component.component.html',
-  styleUrls: ['./rate-component.component.css']
+  templateUrl: './rateSurveyCard.component.html',
+  styleUrls: ['./rateSurveyCard.component.css']
 })
 export class RateComponentComponent {
   selectedValue: number = 0;
@@ -15,7 +15,6 @@ export class RateComponentComponent {
  }
 
  onSubmit(){
-  console.log('Selected Value:', this.selectedValue);
   this.submitted = true;
  }
 }
